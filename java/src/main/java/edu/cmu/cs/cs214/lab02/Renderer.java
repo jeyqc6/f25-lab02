@@ -5,8 +5,8 @@ import edu.cmu.cs.cs214.lab02.shapes.*;
 public class Renderer {
     private Shape shape;
     
-    Renderer(Shape rectangle) {
-        this.shape = rectangle;
+    Renderer(Shape shape) {
+        this.shape = shape;
     }
 
     void draw() {

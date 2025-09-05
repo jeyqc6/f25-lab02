@@ -1,6 +1,6 @@
 import { Shape } from "./shape";
 
-export class circle implements Shape {
+export class Circle implements Shape {
     constructor(private radius: number) {}
 
     computeArea(): number {
