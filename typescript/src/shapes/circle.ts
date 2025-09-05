@@ -1,10 +1,11 @@
-function circle(radius: number): Shape {
-    return {
-        radius,
-        computeArea: function (): number {
-            return Math.PI * radius * radius
-        }
+import { Shape } from "./shape";
+
+export class circle implements Shape {
+    constructor(private radius: number) {}
+
+    computeArea(): number {
+        return Math.PI * this.radius * this.radius;
+
     }
 }
 
-export { circle }
